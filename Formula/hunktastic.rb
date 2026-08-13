@@ -6,8 +6,8 @@ class Hunktastic < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/Zamua/hunktastic/releases/download/v0.18.0-ht.3/hunktastic-aarch64-apple-darwin.tar.gz"
-      sha256 "64a4bc7df76c4c30e9548f6b4479989264a072ae387056328e879956e2055c9b"
+      url "https://github.com/Zamua/hunktastic/releases/download/v0.18.0-ht.4/hunktastic-aarch64-apple-darwin.tar.gz"
+      sha256 "c955322e04e33a1d8ff7d9ea707d4bae8d0d7f71c0957c2ef4bfa12873177f64"
     end
   end
 
