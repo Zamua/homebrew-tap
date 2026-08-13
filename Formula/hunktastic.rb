@@ -6,8 +6,8 @@ class Hunktastic < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/Zamua/hunktastic/releases/download/v0.18.0-ht.1/hunktastic-aarch64-apple-darwin.tar.gz"
-      sha256 "c4782002ed3abd6ec28e21f57872527e788289c14568fa024646a714a02afd4a"
+      url "https://github.com/Zamua/hunktastic/releases/download/v0.18.0-ht.2/hunktastic-aarch64-apple-darwin.tar.gz"
+      sha256 "775e90b17ce39f118fb6e87f85dd95af3da34b99700a36e7ab22995e06f21a69"
     end
   end
 
@@ -17,19 +17,16 @@ class Hunktastic < Formula
   depends_on arch: :arm64
   depends_on :macos
 
-  conflicts_with "hunk", because: "both install a hunk binary"
-
   def install
-    bin.install "hunk"
-    # `hunk skill path` finds the agent skill by walking up from the binary,
+    bin.install "hunkt"
+    # `hunkt skill path` finds the agent skill by walking up from the binary,
     # so this has to sit beside bin/ rather than in share/.
     prefix.install "skills"
-    bin.install_symlink bin/"hunk" => "hunktastic"
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/hunk --version")
-    assert_match "SKILL.md", shell_output("#{bin}/hunk skill path")
+    assert_match version.to_s, shell_output("#{bin}/hunkt --version")
+    assert_match "SKILL.md", shell_output("#{bin}/hunkt skill path")
 
     system "git", "init"
     (testpath/"a.js").write "function f(a) {\n  return a;\n}\n"

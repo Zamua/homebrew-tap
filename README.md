@@ -20,10 +20,9 @@ structural diffs. Fork of [hunk](https://github.com/modem-dev/hunk).
 brew install zamua/tap/hunktastic
 ```
 
-Pulls in `difftastic`, which the structural engine runs as a subprocess. Turn it on
-per run with `hunk diff --engine difftastic`, or set `engine = "difftastic"` in
-`~/.config/hunk/config.toml`. Conflicts with the `hunk` formula, since both install a
-`hunk` binary. macOS arm64 only for now.
+Pulls in `difftastic`, which the structural engine runs as a subprocess. The command is
+`hunkt`, and the structural engine is on by default; `--engine pierre` opts out, and
+config lives at `~/.config/hunkt/config.toml`. macOS arm64 only for now.
 
 ### termdaw
 
