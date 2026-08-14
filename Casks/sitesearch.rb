@@ -8,8 +8,9 @@ cask "sitesearch" do
   homepage "https://github.com/Zamua/sitesearch"
 
   # Running App Intents actions from Spotlight is macOS 26 only; on anything
-  # older the app installs but its action never appears.
-  depends_on macos: ">= :tahoe"
+  # older the app installs but its action never appears. The bare symbol means
+  # "this version or newer" - the ">= :tahoe" string form is deprecated.
+  depends_on macos: :tahoe
 
   app "SiteSearch.app"
 
