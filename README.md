@@ -6,8 +6,25 @@ Personal Homebrew tap for custom formulae.
 
 ```bash
 brew tap zamua/tap
-brew install <formula>
+brew install <formula>        # command-line tools
+brew install --cask <name>    # apps
 ```
+
+## Available Casks
+
+### sitesearch
+
+Custom website search for Spotlight on macOS Tahoe. Configure keyword-to-URL
+mappings, then search any of them from Spotlight: `ss`, pick a site, Tab, your
+query. Bookmarks open directly with `sb`. Ships a stdio MCP server so an agent
+can manage sites without the GUI.
+
+```bash
+brew install --cask zamua/tap/sitesearch
+```
+
+Requires macOS 26 (Tahoe) - running App Intents actions from Spotlight is a
+macOS 26 feature.
 
 ## Available Formulae
 
