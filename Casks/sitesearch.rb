@@ -1,6 +1,6 @@
 cask "sitesearch" do
-  version "0.10.0"
-  sha256 "5342087559f0fb7d1431949c02bfe927f89a85255ce2f70fcbf5675781ddeab7"
+  version "0.11.1"
+  sha256 "aa0522f8e416e226e5f2b8585979f6283f011049229efdee20f471debfb934f7"
 
   url "https://github.com/Zamua/sitesearch/releases/download/v#{version}/SiteSearch-#{version}.zip"
   name "SiteSearch"
