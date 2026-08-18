@@ -2,12 +2,12 @@ class Hunktastic < Formula
   desc "Terminal diff viewer for agent changesets, with difftastic structural diffs"
   homepage "https://github.com/Zamua/hunktastic"
   license "MIT"
-  version "0.18.0"
+  version "0.19.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/Zamua/hunktastic/releases/download/v0.18.0-ht.5/hunktastic-aarch64-apple-darwin.tar.gz"
-      sha256 "f2b94d7bfa6972df9bf68f8a89d9d23d3648b28d1e11946a72e9c1be2e402279"
+      url "https://github.com/Zamua/hunktastic/releases/download/v0.19.0-ht.1/hunktastic-aarch64-apple-darwin.tar.gz"
+      sha256 "b42d242f9b086b29c8623ec518bbcb8dc4b5de3158dcfbab49f77316711ac55b"
     end
   end
 
