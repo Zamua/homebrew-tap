@@ -41,6 +41,19 @@ Pulls in `difftastic`, which the structural engine runs as a subprocess. The com
 `hunkt`, and the structural engine is on by default; `--engine pierre` opts out, and
 config lives at `~/.config/hunkt/config.toml`. macOS arm64 only for now.
 
+### onlineonly
+
+Make Dropbox files online-only or available offline from the command line, with a stdio MCP
+server so agents can do it too. Unofficial; works with the Dropbox app that keeps its folder at
+`~/Dropbox`.
+
+```bash
+brew install zamua/tap/onlineonly
+```
+
+Builds from source. Register it with your agents via
+`npx add-mcp "$(which onlineonly)" --args mcp --name onlineonly -g`.
+
 ### termdaw
 
 Terminal-based Digital Audio Workstation with vim-style navigation.
