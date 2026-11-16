@@ -1,8 +1,8 @@
 class Onlineonly < Formula
   desc "Make Dropbox files online-only or available offline from the CLI or agents"
   homepage "https://github.com/Zamua/onlineonly"
-  url "https://github.com/Zamua/onlineonly/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "5213d53f162ad19e0fb8b02a26fcbf188151176e0a31b8dc27e2575984a5ca36"
+  url "https://github.com/Zamua/onlineonly/archive/refs/tags/v0.1.3.tar.gz"
+  sha256 "ffa46c89846a6782a8592f052f4468d4cd4d9d0ec106a7662b032327d37835cb"
   license "MIT"
 
   # Drives the macOS Dropbox desktop app over a local Mach port.
